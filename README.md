@@ -1,4 +1,4 @@
-# KenshiModpack
+# Kenshi&Modpack
 
 1. Stability, crash fixes, and performance
 
