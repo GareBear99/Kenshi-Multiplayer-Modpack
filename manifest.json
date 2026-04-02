@@ -1,0 +1,222 @@
+{
+  "name": "Kenshi Multiplayer Modpack",
+  "version": "v1",
+  "game": "Kenshi",
+  "game_version_policy": "All players must use the same Kenshi game build and the same locked mod manifest.",
+  "modpack_policy": {
+    "exact_match_required": true,
+    "hash_verification_recommended": true,
+    "load_order_lock_required": true,
+    "mixed_versions_supported": false
+  },
+  "mods": [
+    {
+      "filename": "Animal Traders-134-13-1546402785.7z",
+      "size_bytes": 283504,
+      "sha256": "f4d88fd5bfc0a0092b29d43b8e180418920e756199b7aafe1ca56624d1000248",
+      "extension": ".7z",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "AnimalBackpacksRus-212-16-1547914346.rar",
+      "size_bytes": 2087463,
+      "sha256": "b8a1d90e4f5249d36d70052d227e07e2ff33fc8c63d1bd4437aea778d7c5c603",
+      "extension": ".rar",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "AnimalTradersRus-213-17-1547914706.rar",
+      "size_bytes": 512871,
+      "sha256": "920ff4bd9162f6a4c0f4cfff67d281bcad9be0c180d5f09f0a52180bcf61f03f",
+      "extension": ".rar",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Darker Nights and ReShade-241-1-1-1549850352.7z",
+      "size_bytes": 96483,
+      "sha256": "5035fa82be41e6c91609ef57d0ca0dbc52a699a9458011c21a2244421a10a0f5",
+      "extension": ".7z",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "DesertUI-1004-1-2-5-1656861093.7z",
+      "size_bytes": 685373,
+      "sha256": "34fc159206fb8b5b81aa2a62a8526cf23ceef0fb9178ed1f1b05f8b7df6c890e",
+      "extension": ".7z",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Engine Mesh Updater-1212-2-0-2-1736972652.zip",
+      "size_bytes": 1970143,
+      "sha256": "a70a4c2a4862ed6b4457a73e6ec3e9e90d80a4c18e95328664090c67c7e38fc7",
+      "extension": ".zip",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "euro swords-126-idk.zip",
+      "size_bytes": 596335,
+      "sha256": "652aa7cfab920389385c1710234d27117b1ec159630992e39a06c02911d764b1",
+      "extension": ".zip",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Hive Cybernetics Expansion V1.1-1231-1-1-0-1689337937.zip",
+      "size_bytes": 5682,
+      "sha256": "0a1622f8716644d7154e01720a75b6354bb35335a827ddd8e818e9be4eab0289",
+      "extension": ".zip",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Kenshi tweaks-447-2-8-3-1684227116.zip",
+      "size_bytes": 336007,
+      "sha256": "1b1b2fa7b34e27308321619a242f81e39c61f403c02c80332b44e910b1acc426",
+      "extension": ".zip",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Kenshi_CTD_Fix-506-1-5-1717034322.zip",
+      "size_bytes": 140305,
+      "sha256": "cbc05344f8677b955941d817a7729179ecab21a25b23f0bd0df2bc805e5e2adc",
+      "extension": ".zip",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "M.U.D.-403-4-03-1663634888.rar",
+      "size_bytes": 892651,
+      "sha256": "f0eff2450bc751a3c24c3951cb63107f247251b0c5a5ebcb47089a3a69866b73",
+      "extension": ".rar",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Mad Monks-22--63.7z",
+      "size_bytes": 403485,
+      "sha256": "b491c226fed82f5f67978124369313015386fbcf62b93f81aab33167506bcab0",
+      "extension": ".7z",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Naginata 0.74.25-1-.zip",
+      "size_bytes": 2608122,
+      "sha256": "58b09313cd1f040e98b2d25be5c4e9f5332cee0a83c524af046eeba908f673be",
+      "extension": ".zip",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Nation Rising-24-1-2.zip",
+      "size_bytes": 2786,
+      "sha256": "1542d7294c235fc2fccbb30a550576722c8f8a0c7d065c6aa4e368299c8d50b9",
+      "extension": ".zip",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "No Stat Backpacks-165-1-0-1590633184.rar",
+      "size_bytes": 507,
+      "sha256": "23fd56ed33d7886d2487a5947e02d0265fa06f669860b9b0988ee6f768c4b80a",
+      "extension": ".rar",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "No Stat Backpacks.mod",
+      "size_bytes": 2434,
+      "sha256": "940366fcd68dfb2c84e9504d927be785d613fadda934a8bca7449d0d5566ca4c",
+      "extension": ".mod",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Particle system override (installer)-950-3-4-1701958188.zip",
+      "size_bytes": 7993746,
+      "sha256": "737b34180bcc2d19c3c8399bbdba3523d1e212377df4a06a940d0aa4b1cbe92b",
+      "extension": ".zip",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Rag Short Loincloth-183-1-00-1546670695.7z",
+      "size_bytes": 81370,
+      "sha256": "1de7404ca16746d1c1d046c96b8f435fc7c61922575fe71e218219a4ae987c95",
+      "extension": ".7z",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Recruitable Prisioners Patch (IdeaDork)-1063-1-0-1661734748.rar",
+      "size_bytes": 1647,
+      "sha256": "4fcaea1ae240e0836e18a25c82071f8e4182840f88bb20d681b9508624f50edc",
+      "extension": ".rar",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Recruitable Prisoners-418-2-1560768753.rar",
+      "size_bytes": 729899,
+      "sha256": "c3ce79c97ac9acbc0efbb7f3cf8149d2ab38bcc7149a704607615ab370cf5168",
+      "extension": ".rar",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "ShaderSaturation-219-1-0-1548136560.zip",
+      "size_bytes": 2923,
+      "sha256": "5b44362a373c7c56f5984cb77bd71365468918c4c5e4e508fc4415dc0c8d48ef",
+      "extension": ".zip",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Shirts For All-411-3-0-1562767510.zip",
+      "size_bytes": 8989627,
+      "sha256": "c495774e72bd9936e2871dd867bb0e606e7eb572797a007c181fe4a917dade5a",
+      "extension": ".zip",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "SleepOnFloor-103-0-1.rar",
+      "size_bytes": 1032,
+      "sha256": "0e7d309414296e315189d2dc90908c0b7d72e705a7e5fbf05a8657ee18b44463",
+      "extension": ".rar",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "Slopeless-398-6-1599773032.zip",
+      "size_bytes": 879890,
+      "sha256": "126832053cbad90150ee097cd96a6b9d26d2d37cabf5be7d907168a550b7c279",
+      "extension": ".zip",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "T2SwiD - Universal Wasteland Expansion Add-on-1131-1-11-1704780982.zip",
+      "size_bytes": 5612,
+      "sha256": "93f2f06587b6193de2d302b6f0d74a573dff48c2dce941a7bac4a4e80a79860d",
+      "extension": ".zip",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    },
+    {
+      "filename": "United Cities Heightened-141-1-4-1553911379.rar",
+      "size_bytes": 23215987,
+      "sha256": "043bc95ef93a68eedf656d66a619dfd383fd6d647a999f7550328d509553c174",
+      "extension": ".rar",
+      "status": "unreviewed",
+      "multiplayer_notes": "Needs compatibility testing against the Kenshi multiplayer runtime and the final locked load order."
+    }
+  ]
+}

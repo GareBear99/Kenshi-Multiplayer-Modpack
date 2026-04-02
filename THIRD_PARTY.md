@@ -1,19 +1,7 @@
-# Third-Party Content Notice
+# Third-Party Files
 
-This repository contains third-party binaries and mod archives.
+This repository includes third-party game mod archives and multiplayer runtime binaries.
 
-## Important
+Before publishing publicly, confirm that your redistribution of each included archive or binary is allowed by the original author/license/terms.
 
-- Ownership and licensing for included mods remain with their original authors.
-- Do **not** assume this repository grants blanket relicensing rights over included third-party content.
-- Before public redistribution at scale, review each included mod's permissions and source page.
-
-## Recommended improvement
-
-Track, for every included third-party asset:
-- source page
-- author
-- license / permissions
-- version
-- checksum
-- inclusion reason
+If redistribution is not allowed, convert the repository to a manifest-driven setup that links to official sources instead of bundling the files directly.

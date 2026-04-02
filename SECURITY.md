@@ -2,24 +2,15 @@
 
 ## Scope
 
-This repository contains third-party mod archives and multiplayer runtime packaging notes. It is not a hardened network product by itself.
+This repository distributes a multiplayer runtime bundle plus modpack project files.
 
-## Please report
+## Report privately if you find
+- malicious file replacement concerns
+- unsafe executable tampering concerns
+- manifest/hash mismatch issues
+- packaging issues that could mislead users
 
-Open a private report first if you find:
-- malicious files
-- unsafe executables
-- credential leakage
-- dangerous installer behavior
-- unauthorized archive replacements
-
-## Please include
-
-- affected file(s)
-- operating system
-- reproduction steps
-- screenshots or logs if relevant
-
-## Current security posture
-
-Treat any included executable or third-party archive as something that should be validated before broad redistribution.
+## Basic release hygiene
+- verify file hashes before publishing releases
+- clearly tag tested versions
+- do not silently replace release assets

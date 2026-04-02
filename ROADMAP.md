@@ -1,31 +1,32 @@
 # Roadmap
 
-## Phase 1 — Repo cleanup
-- [x] replace the thin README with a real front page
-- [x] normalize install folder naming
-- [x] add contributing, security, and issue templates
-- [x] add compatibility and third-party docs
+## Phase 1 — Repository Foundation
+- Clean GitHub-facing structure
+- Add install, compatibility, and manifest docs
+- Normalize multiplayer runtime folder layout
+- Add community files and templates
 
-## Phase 2 — Manifest discipline
-- [ ] create `modpack-manifest.json`
-- [ ] add checksums for every archive
-- [ ] add source links for every included mod
-- [ ] define exact tested load order
+## Phase 2 — Modpack Certification
+- Create locked load order
+- Review each mod archive
+- Mark safe / risky / excluded
+- Add conflict notes
+- Add dependency notes
 
-## Phase 3 — Multiplayer curation
-- [ ] mark each mod safe / test / risky / reject
-- [ ] isolate world-overhaul conflicts
-- [ ] build a minimal stable co-op preset
-- [ ] build an expanded high-risk preset separately
+## Phase 3 — Release Discipline
+- Tag tested versions
+- Publish release notes
+- Store hash-locked manifests per release
+- Add screenshots and usage media
 
-## Phase 4 — Validation tooling
-- [ ] add version-check script
-- [ ] add manifest compare script
-- [ ] add load-order compare script
-- [ ] add install audit checklist
+## Phase 4 — Multiplayer Validation
+- Same-version session tests
+- long-session desync tests
+- recruit/combat/base-building checks
+- reconnect and save/load checks
 
-## Phase 5 — Public-facing polish
-- [ ] add screenshots / diagrams
-- [ ] add release notes
-- [ ] add changelog
-- [ ] add GitHub releases with tagged tested builds
+## Phase 5 — Public Contributions
+- submission standards
+- issue triage flow
+- mod review checklist
+- release gate checklist

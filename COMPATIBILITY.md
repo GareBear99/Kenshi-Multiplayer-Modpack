@@ -1,53 +1,51 @@
-# Compatibility Doctrine
+# Compatibility
 
-## Core rule
+## Hard Requirements
 
-For multiplayer testing, every client should match on:
+For a Kenshi multiplayer setup, these must match across all players:
 
-- **Kenshi version**
-- **runtime files**
-- **mod set**
-- **mod versions**
-- **load order**
+- game version
+- multiplayer runtime version
+- modpack version
+- mod archive hashes
+- extracted mod contents
+- final load order
 
-## Why this matters
+## Current State
 
-Kenshi was not built as a native multiplayer game. Once you add a multiplayer runtime layer, any mismatch can create:
-- missing entities
-- broken UI layouts
-- invisible equipment or models
-- differing world state
-- crashes during join/load/combat
+This repository includes the current multiplayer runtime bundle and the current `ModpackV1` archive collection, but the pack should still be treated as **validation in progress**.
 
-## Multiplayer-safe categories
+## Recommended Rule Set
 
-Usually safer:
+- Reject mixed game versions
+- Reject mixed multiplayer runtime versions
+- Reject mixed modpack hashes
+- Reject mixed load orders
+- Only promote mods into a release once they pass multiplayer testing
+
+## Risk Categories
+
+### Lower-risk candidates
+Generally safer starting candidates for multiplayer evaluation:
 - UI mods
-- texture/style mods
-- some mesh fixes
-- some non-invasive quality-of-life mods
+- visual polish mods
+- lighting/reshade style mods that do not alter game logic
+- mesh fixes
+- crash/stability helpers
 
-Higher risk:
-- world overhauls
-- faction rewrites
-- economy rewrites
+### Higher-risk candidates
+Require careful validation before being treated as multiplayer-safe:
+- faction/world overhauls
+- AI behavior changes
 - recruitment system changes
-- settlement/world state changes
-- scripted event-heavy mods
+- prisoner/recruitment overhauls
+- base-building/world-state affecting mods
+- mods with many patched dependencies
 
-## Policy this repo should adopt
+## Final Goal
 
-- maintain a **tested whitelist**
-- maintain a **known-risk list**
-- reject “everything pack” thinking until it has been validated
-- treat load order as part of the protocol, not a suggestion
+The final public release should split mods into:
 
-## Mac + Windows note
-
-The safest practical target is usually:
-- same Kenshi build
-- same runtime version
-- same mod manifest
-- Windows-native or compatibility-layer client parity
-
-Do not assume “Mac” means a native macOS Kenshi client stack.
+- `safe`
+- `needs-testing`
+- `unsafe-for-current-release`

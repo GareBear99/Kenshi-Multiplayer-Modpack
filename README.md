@@ -1,90 +1,138 @@
 # Kenshi Multiplayer Modpack
 
-A curated **Kenshi multiplayer-oriented modpack repository** built around the idea of making a shared-world co-op setup easier to install, easier to audit, and easier to keep aligned across machines.
+A commit-ready GitHub package for a **Kenshi multiplayer-focused modpack** built around a bundled Kenshi multiplayer runtime plus a curated `ModpackV1` archive set.
 
-This repository is for people who want:
-- a cleaner starting point for a **Kenshi multiplayer stack**
-- a documented **same-version / same-modset** workflow
-- a place to track **safe mods, risky mods, and compatibility notes**
-- a repo that is easier to understand than a loose folder of archives
+This repository packages three things together:
 
-> **Important:** Kenshi is a single-player game. Real multiplayer requires a separate runtime layer, synchronized clients, and strict version matching. This repository packages the current install assets and mod archives, but it does **not** by itself turn vanilla Kenshi into native multiplayer.
+1. **Multiplayer runtime files** in `KenshiMP-Install/`
+2. **Current mod archives** in `ModpackV1/`
+3. **Project documentation and GitHub community scaffolding** so the repo is understandable, maintainable, and easier to discover
 
-## What is in this repo
+## Current Status
 
-- `KenshiMP-Install/` — current multiplayer runtime install assets
-- `ModpackV1/` — archived mod packages currently included in this stack
-- `docs/` — structure, roadmap, curation notes, and repo metadata
-- community files for issues, reports, and pull requests
+This repo is a **distribution and organization layer** for the current multiplayer setup.
 
-## Current project goals
+- The multiplayer client/server binaries are included
+- The modpack archives are included as provided
+- The repo now includes install, compatibility, roadmap, contribution, and manifest docs
+- `manifest.json` includes SHA-256 hashes for the current `ModpackV1` contents
 
-1. Keep a **documented, repeatable install path** for the current Kenshi multiplayer setup.
-2. Build a **multiplayer-safe mod list** instead of a random pile of cool mods.
-3. Enforce a **same game version / same mod version / same load order** doctrine.
-4. Turn the repo into a cleaner public-facing project that is easier to find, understand, and contribute to.
-
-## Quick start
-
-See these first:
-- [`INSTALL.md`](INSTALL.md)
-- [`MODLIST.md`](MODLIST.md)
-- [`COMPATIBILITY.md`](COMPATIBILITY.md)
-- [`ROADMAP.md`](ROADMAP.md)
-- [`THIRD_PARTY.md`](THIRD_PARTY.md)
-
-## Recommended repo description
-
-Use this as the GitHub repository description:
-
-**Curated Kenshi multiplayer modpack and install workflow focused on same-version co-op setup, compatibility notes, mod curation, and synchronized shared-world play.**
-
-## Suggested topics
-
-GitHub topics help classify repositories and improve discoverability.
-
-Suggested topics for this repo:
-
-`kenshi`, `kenshi-mods`, `kenshi-modpack`, `multiplayer`, `coop`, `modding`, `open-world`, `rpg`, `sandbox`, `survival`, `pc-gaming`, `game-modding`
-
-More topic ideas are listed in [`docs/REPO_TOPICS.md`](docs/REPO_TOPICS.md).
-
-## Current structure
+## Repository Layout
 
 ```text
-Kenshi-Multiplayer-Modpack/
-├── KenshiMP-Install/
-│   ├── client/
-│   └── server/
-├── ModpackV1/
-├── .github/
-├── docs/
-├── COMPATIBILITY.md
-├── CONTRIBUTING.md
-├── INSTALL.md
-├── MODLIST.md
-├── ROADMAP.md
-├── SECURITY.md
-├── THIRD_PARTY.md
-└── README.md
+KenshiMP-Install/
+  client/
+    KenshiMP.Core.dll
+    KenshiMP.Injector.exe
+    Kenshi_MainMenu.layout
+    Kenshi_MultiplayerHUD.layout
+    Kenshi_MultiplayerPanel.layout
+  server/
+    KenshiMP.Server.exe
+
+ModpackV1/
+  <current archive set>
+
+.github/
+  ISSUE_TEMPLATE/
+  pull_request_template.md
+
+README.md
+INSTALL.md
+COMPATIBILITY.md
+MODLIST.md
+ROADMAP.md
+manifest.json
 ```
 
-## Known realities
+## What this repo is for
 
-- Full Kenshi multiplayer depends on external runtime tooling, not normal data-only modding.
-- Every player should use the **same Kenshi build**, **same mod archives**, and **same load order**.
-- Big overhauls and world-state mods can desync or conflict unless they are deliberately curated.
-- This repo should eventually move toward a **manifest-driven install and validation workflow**.
+Use this repo if you want a single GitHub home for:
 
-## Next steps
+- your Kenshi multiplayer runtime files
+- your current multiplayer-oriented modpack archives
+- future tested load orders and compatibility notes
+- submissions, issue tracking, and public-facing project documentation
 
-- normalize the mod list into a machine-readable manifest
-- add per-mod source links and checksum tracking
-- add a locked tested load order
-- split safe vs risky mods
-- add install validation scripts for same-version checks
-- document Windows host + Mac via compatibility layer workflow if that is part of the target setup
+## Important Reality Check
 
-## Community health
+This repository does **not** claim that every archive in `ModpackV1/` has already been fully validated for long-session multiplayer stability.
 
-This repo now includes those scaffolding files so it reads like an actual project instead of an upload dump.
+Right now the correct framing is:
+
+- **multiplayer runtime included**
+- **modpack archives included**
+- **manifest + structure added**
+- **full compatibility certification still in progress**
+
+## Fast Start
+
+Read these first:
+
+- [INSTALL.md](INSTALL.md)
+- [COMPATIBILITY.md](COMPATIBILITY.md)
+- [MODLIST.md](MODLIST.md)
+- [ROADMAP.md](ROADMAP.md)
+
+## Modpack Manifest
+
+The current tracked modpack files are listed in `manifest.json` and summarized in [MODLIST.md](MODLIST.md).
+
+## SEO / Discoverability Notes
+
+Suggested GitHub topics for this repository:
+
+- `kenshi`
+- `kenshi-mods`
+- `kenshi-multiplayer`
+- `modpack`
+- `open-source`
+- `game-modding`
+- `pc-gaming`
+- `rpg`
+- `sandbox-game`
+- `multiplayer-mod`
+
+Suggested repo description:
+
+> Kenshi multiplayer modpack repository with bundled multiplayer runtime, install docs, manifest hashes, compatibility notes, and modpack roadmap.
+
+## Included Modpack Files
+
+- `Animal Traders-134-13-1546402785.7z`
+- `AnimalBackpacksRus-212-16-1547914346.rar`
+- `AnimalTradersRus-213-17-1547914706.rar`
+- `Darker Nights and ReShade-241-1-1-1549850352.7z`
+- `DesertUI-1004-1-2-5-1656861093.7z`
+- `Engine Mesh Updater-1212-2-0-2-1736972652.zip`
+- `euro swords-126-idk.zip`
+- `Hive Cybernetics Expansion V1.1-1231-1-1-0-1689337937.zip`
+- `Kenshi tweaks-447-2-8-3-1684227116.zip`
+- `Kenshi_CTD_Fix-506-1-5-1717034322.zip`
+- `M.U.D.-403-4-03-1663634888.rar`
+- `Mad Monks-22--63.7z`
+- `Naginata 0.74.25-1-.zip`
+- `Nation Rising-24-1-2.zip`
+- `No Stat Backpacks-165-1-0-1590633184.rar`
+- `No Stat Backpacks.mod`
+- `Particle system override (installer)-950-3-4-1701958188.zip`
+- `Rag Short Loincloth-183-1-00-1546670695.7z`
+- `Recruitable Prisioners Patch (IdeaDork)-1063-1-0-1661734748.rar`
+- `Recruitable Prisoners-418-2-1560768753.rar`
+- `ShaderSaturation-219-1-0-1548136560.zip`
+- `Shirts For All-411-3-0-1562767510.zip`
+- `SleepOnFloor-103-0-1.rar`
+- `Slopeless-398-6-1599773032.zip`
+- `T2SwiD - Universal Wasteland Expansion Add-on-1131-1-11-1704780982.zip`
+- `United Cities Heightened-141-1-4-1553911379.rar`
+
+## Next Priority
+
+The next serious upgrade is to move from a raw archive collection to a **fully locked multiplayer-safe pack** with:
+
+- tested load order
+- enabled/disabled matrix
+- conflict notes
+- safe/risky tags
+- version-locked releases
+- install automation where legally and technically appropriate

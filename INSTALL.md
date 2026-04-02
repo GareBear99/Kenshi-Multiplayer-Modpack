@@ -1,50 +1,52 @@
-# Installation
+# Install Guide
 
-## Scope
+## 1. Requirements
 
-This document explains the current repository layout and the intended install flow for the current package.
+- Same Kenshi game version on every participating machine
+- Same multiplayer runtime files
+- Same modpack contents
+- Same final load order
 
-## Before you begin
+## 2. Multiplayer Runtime
 
-You should lock these before multiplayer testing:
+Client files are stored in `KenshiMP-Install/client/`.
 
-1. **Same Kenshi game version** on every machine
-2. **Same multiplayer runtime files**
-3. **Same mod archives and extracted mod contents**
-4. **Same load order**
-5. **Same settings profile** where relevant
+Server files are stored in `KenshiMP-Install/server/`.
 
-If any of those drift, you increase the chance of desyncs, missing assets, broken UI layouts, or outright crashes.
+Current client bundle:
 
-## Repository folders
+- `KenshiMP.Core.dll`
+- `KenshiMP.Injector.exe`
+- `Kenshi_MainMenu.layout`
+- `Kenshi_MultiplayerHUD.layout`
+- `Kenshi_MultiplayerPanel.layout`
 
-### `KenshiMP-Install/client/`
-Client-side multiplayer runtime files currently included in the repo.
+Current server bundle:
 
-### `KenshiMP-Install/server/`
-Server-side executable currently included in the repo.
+- `KenshiMP.Server.exe`
 
-### `ModpackV1/`
-Compressed third-party mod archives currently stored in this repository.
+## 3. Modpack Files
 
-## Recommended install flow
+All current mod archives are stored in `ModpackV1/`.
 
-1. Install Kenshi.
-2. Confirm every player is on the same game version.
-3. Copy the current multiplayer client files into the target Kenshi install as required by the runtime.
-4. Set up the dedicated server or host flow using the server package in `KenshiMP-Install/server/`.
-5. Extract the selected mod archives from `ModpackV1/` into the Kenshi mods directory.
-6. Apply the agreed load order.
-7. Launch the same test save / same onboarding flow on every client.
-8. Validate that every player sees the same UI, same assets, and same mod list before a real run.
+Before multiplayer testing, every player should have:
 
-## Recommended future improvement
+- the same archive set
+- the same extracted mod contents where required
+- the same enabled mod list
+- the same load order
 
-The repo should evolve toward a manifest-driven installer with:
-- file hashes
-- exact load order export
-- game version validation
-- mod version validation
-- install sanity checks
+## 4. Recommended Setup Flow
 
-That would reduce “it works on my machine” failures.
+1. Lock the Kenshi game version.
+2. Lock the multiplayer runtime version.
+3. Lock the modpack version using `manifest.json`.
+4. Verify hashes before play sessions.
+5. Export and store the tested load order in the repo.
+6. Only then begin multiplayer validation.
+
+## 5. What still needs to be finalized
+
+This repository still needs a final tested load order and a reviewed compatibility matrix for the included mod archives.
+
+Until that is complete, treat this as a **structured project package**, not a fully certified one-click install.

@@ -1,15 +1,5 @@
 # Code of Conduct
 
-Be respectful, specific, and useful.
+Be respectful, specific, and constructive.
 
-## Expected behavior
-- provide clear reproduction steps
-- keep mod debates technical
-- separate taste from compatibility
-- avoid harassment, insults, or pile-ons
-
-## Unacceptable behavior
-- abusive language
-- personal attacks
-- knowingly false compatibility claims
-- redistribution of third-party work without proper attribution or permission where required
+This repo is for discussing a Kenshi multiplayer-oriented modpack project. Keep reports focused on reproducible issues, compatibility findings, and useful improvements.
